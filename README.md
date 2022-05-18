@@ -22,9 +22,12 @@ De webapplicatie bestaat uit vier delen: meetinstrument (formulier met quizvrage
 
 ## Installatie
 clone via cmd/terminal:
+
 ```git clone https://github.com/NBadeloe/performance-matters-reflect-for-effect```
 
+
 voorbereiden van packages:
+
 ``` npm init
 npm install
 npm install node-fetch@2
@@ -33,12 +36,15 @@ npm install ejs
 ``` 
 
 ## Gebruik
-start project op localhost: 
+start project op localhost:
+
 ``` node .```
 ## Bronnen
-(node fetch)[https://www.npmjs.com/package/node-fetch]
-(express)[https://www.npmjs.com/package/express]
-(ejs)[https://www.npmjs.com/package/ejs]
+[node fetch](https://www.npmjs.com/package/node-fetch)
+
+[express](https://www.npmjs.com/package/express)
+
+[ejs](https://www.npmjs.com/package/ejs)
 
 
 ## Licentie
