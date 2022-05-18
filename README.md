@@ -21,11 +21,25 @@ Reflect for effect is een concept (web)applicatie voor mensen die werken in de j
 De webapplicatie bestaat uit vier delen: meetinstrument (formulier met quizvragen), de database (opslag), een interactieve visualisatie (inzicht en reflectie) en een basic beheer omgeving (admin) om formulieren te bewerken, bewaren en verspreiden. Dit project is gemaakt met node.js, ejs. Er is ook gebruik gemaakt losse packages net als node-fetch en express.
 
 ## Installatie
+clone via cmd/terminal:
+```git clone https://github.com/NBadeloe/performance-matters-reflect-for-effect```
 
+voorbereiden van packages:
+``` npm init
+npm install
+npm install node-fetch@2
+npm install express
+npm install ejs
+``` 
 
 ## Gebruik
-
+start project op localhost: 
+``` node .```
 ## Bronnen
+(node fetch)[https://www.npmjs.com/package/node-fetch]
+(express)[https://www.npmjs.com/package/express]
+(ejs)[https://www.npmjs.com/package/ejs]
+
 
 ## Licentie
 
