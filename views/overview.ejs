@@ -4,35 +4,42 @@
 
 <h1>Welkom admin,</h1>
 <h2>
-    <span>
-        Hieronder is een overzicht van alle
-        vragenlijsten</span>
+  <span>
+    Hieronder is een overzicht van alle
+    vragenlijsten </span>
 </h2>
 
 <table>
-    <thead>
+  <thead>
+    <tr>
+      <th>
+        vragenlijst
+      </th>
+      <th class="plus">
+        <img src="./assets/004-plus.png" alt="plus">
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <% vragen.forEach(result => { %>
         <tr>
-        <th>
-            vragenlijst
-        </th>
-        <th class="plus">
-            <img src="/assets/004-plus.png" alt="plus">
-        </th>
+        <td>
+        <%= result.vraag %>
+        <input type="hidden" <%= result.vraagId %>>
+      </td>
         </tr>
-    </thead>
+    
 
-    <tbody>
-        <ul>
-            <% vragen.forEach(result => { %>
-                <li>
-                    
-                        <%= result.vraag %>
-                       
-                </li>
-            <% }) %>
-          </ul>
+      <% }) %>
 
-            <td>vragenlijst 1</td>
+
+
+
+
+
+    <!-- <td>vragenlijst 1</td>
             <td class="icons"><img src="/assets/001-visibility.png" alt="eye">
                <a href="./form.html"><img src="/assets/003-edit.png" alt="edit"></a>
                 <img src="/assets/002-trash.png" alt="delete"></td>
@@ -50,9 +57,9 @@
             <td class="icons"><img src="/assets/001-visibility.png" alt="eye">
                 <img src="/assets/003-edit.png" alt="edit">
                 <img src="/assets/002-trash.png" alt="delete"></td>
-        </tr>
-    
-    </tbody>
+        </tr> -->
+
+  </tbody>
 
 
 

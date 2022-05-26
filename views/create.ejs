@@ -1,0 +1,20 @@
+<%- include ('partials/head.ejs')%>
+
+                <h1>Toevoegen vraag</h1>
+                    
+                        <form id="createVraag" method="POST" action="/create" >
+                            
+                            <label for="vraag">Vraag</label>
+                            <textarea name="vraag" id="vraag" cols="50" rows="10"></textarea>
+
+                            <label for="competentie">competentie</label>
+                            <input type="text" id="competentieID" value="18" >
+
+                            <label for="vragenlijst">vragenlijst</label>
+                            <input type="text" id="vragenlijstID" value="1" >
+
+                      
+                            <button type="submit">Opslaan</button>
+                        </form>
+                
+                        <%- include ('partials/footer')%>
